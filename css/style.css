@@ -12,15 +12,8 @@
     font-style: normal;
 }
 
-
 body {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.46;
-    margin: 0;
-    padding: 0;
+   background-image: url(/images/bg.png);
 }
 
 h3 {
@@ -33,4 +26,16 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 64px;
+}
+
+container {
+    border: 5px;
+    max-width: 1000px;
+}
+
+header {
+    border: 5px; 
+    max-width: 1000px;
+    height: 100px;
+    background-color: blue;
 }
