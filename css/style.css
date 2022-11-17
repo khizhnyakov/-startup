@@ -28,14 +28,84 @@ h3 {
     margin-top: 64px;
 }
 
-container {
-    border: 5px;
-    max-width: 1000px;
+.container{
+    min-width: 320px;
 }
 
-header {
-    border: 5px; 
-    max-width: 1000px;
-    height: 100px;
-    background-color: blue;
+.header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-logo {
+    position: relative;
+    z-index: 10;
+    margin-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;;
+}
+
+
+.header-cloud_1 {
+        position: absolute;
+        top: -80px;
+        left: -80px;
+        width: 45%;
+}
+.header-cloud_2 {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 30%;
+}
+
+@media (max-width: 1440px){
+    .header-cloud_1 {
+    top: -5px;
+    left: -80px;}
+
+    .header-cloud_2{
+    width: 30%;
+}
+}
+
+@media (max-width: 1000px) {
+    .header-cloud_1 {
+        top: -5px;
+        left: -80px;
+        width: 60%;
+    }
+
+    .header-cloud_2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+.header-logo {
+
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 460px) {
+    .header-clouds{
+        min-width: 460px;
+    }
+    .header-logo {
+        max-width: 300px;
+        margin-top: 80px;
+    }
+    .header-cloud_1 {
+        width: 60%;
+        top: 10px;
+        left: -40px;
+    }
+    .header-cloud_2 {
+        width: 60%;
+        top: -5px;
+        right: -30px;
+    }
 }
